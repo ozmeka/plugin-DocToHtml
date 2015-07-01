@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * MS docx to HTML converter for Omeka
+ * requires a recent version of Pandoc to read docx
+ * @copyright Copyright 2015 eResearch at University of Technnology, Sydney
+ * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ */
+
 define('DOCTOHTML_DIR', dirname(__FILE__));
 define('DOCTOHTML_FILES_DIR', DOCTOHTML_DIR. '/files');
 
@@ -171,7 +178,7 @@ class DocToHtmlPlugin extends Omeka_Plugin_AbstractPlugin
         }
         return true;
     }
-	
+
 	/**
      * Get the PDF MIME types.
      * 
